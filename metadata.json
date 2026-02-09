@@ -1,0 +1,7 @@
+{
+  "name": "Landing Page Roaster AI",
+  "description": "An AI-powered SEO and conversion optimization tool that provides brutally honest feedback on landing page design, copy, and layout.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
