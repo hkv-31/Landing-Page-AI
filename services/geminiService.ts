@@ -6,7 +6,9 @@ export const analyzeLandingPage = async (
   input: string, // Base64 image data or URL
   isImage: boolean
 ): Promise<RoastReportData> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+  const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY
+});
   
   const systemInstruction = `You are a world-class landing page optimizer and SEO expert.
   Your goal is to analyze a landing page and provide a high-impact, honest audit.
